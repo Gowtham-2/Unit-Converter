@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Conveter</title> 
+    <link rel="stylesheet" href="style.css">
+    <script>
+		function myResult()
+		{       
+			var input = document.getElementById('input');
+			var result = document.getElementById('result');
+			var select1 = document.getElementById('inputType');
+			var option1 = select1.options[select1.selectedIndex];
+			var select2 = document.getElementById('resultType');
+			var option2 = select2.options[select2.selectedIndex];
+			var a= option1.text;
+			var b=option2.text;
+			if(a==="Meter")
+			{
+				if(b==="Meter")
+				{
+					document.getElementById('result').value=input.value;
+				}
+				else if(b==="Kilometer")
+				{
+					result.value=parseFloat(Number(input.value)/1000).toFixed(6);
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*100;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*1000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*1000000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1000000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1609).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)*1.094).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)*3.281).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=parseFloat(Number(input.value)*39.37).toFixed(6);
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1852).toFixed(6);
+				}
+			}
+			if(a==="Kilometer")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value);
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)*1000;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*100000;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*1000000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*1000000000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1000000000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1.609).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=Number(input.value)*1094;
+				}
+				else if(b==="Foot")
+				{
+					result.value=Number(input.value)*3281;
+				}
+				else if(b==="Inch")
+				{
+					result.value=Number(input.value)*39370;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1.852).toFixed(6);
+				}
+			}
+			if(a==="Centimeter")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)/100000;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)/100;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value);
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*10;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*10000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*10000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/160900).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/91.44).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)/30.48).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=parseFloat(Number(input.value)/2.54).toFixed(6);
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/185200).toFixed(6);
+				}
+			}
+			if(a==="Millimeter")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)/1000000;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)/1000;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)/10;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*1000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1609000).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/914.4).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)/304.8).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=parseFloat(Number(input.value)/25.4).toFixed(6);
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1852000).toFixed(6);
+				}
+			}
+			if(a==="Micrometer")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)/1000000000;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)/1000000;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)/10000;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)/1000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1609000000).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/914400).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)/304800).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=parseFloat(Number(input.value)/25400).toFixed(6);
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1852000000).toFixed(6);
+				}
+			}
+			if(a==="Nanometer")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)/1000000000000;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)/1000000000;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)/10000000;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)/1000000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)/1000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1609000000000).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/914400000).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)/304800000).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=parseFloat(Number(input.value)/25400000).toFixed(6);
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1852000000000).toFixed(6);
+				}
+			}
+			if(a==="Mile")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)*1.609;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)*1609;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*160900;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*1609000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*1609000000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1609000000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=input.value
+				}
+				else if(b==="Yard")
+				{
+					result.value=Number(input.value)*1760;
+				}
+				else if(b==="Foot")
+				{
+					result.value=Number(input.value)*5280;
+				}
+				else if(b==="Inch")
+				{
+					result.value=Number(input.value)*63360;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/1.151).toFixed(6);
+				}
+			}
+			if(a==="Yard")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=parseFloat(Number(input.value)/1094).toFixed(6);
+				}
+				else if(b==="Meter")
+				{
+					result.value=parseFloat(Number(input.value)/1.904).toFixed(6);
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*91.44;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*914.4;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*914400;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*914400000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/1760).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Foot")
+				{
+					result.value=Number(input.value)*3;
+				}
+				else if(b==="Inch")
+				{
+					result.value=Number(input.value)*36;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/2025).toFixed(6);
+				}
+			}
+			if(a==="Foot")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=parseFloat(Number(input.value)/3281).toFixed(6);
+				}
+				else if(b==="Meter")
+				{
+					result.value=parseFloat(Number(input.value)/3.281).toFixed(6);
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*30.48;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*304.8;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*304800;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*304800000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/5280).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/3).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Inch")
+				{
+					result.value=Number(input.value)*12;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/6076).toFixed(6);
+				}
+			}
+			if(a==="Inch")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=parseFloat(Number(input.value)/39370).toFixed(6);
+				}
+				else if(b==="Meter")
+				{
+					result.value=parseFloat(Number(input.value)/39.37).toFixed(6);
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*2.54;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*25.4;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*25400;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*25400000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)/63360).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=parseFloat(Number(input.value)/36).toFixed(6);
+				}
+				else if(b==="Foot")
+				{
+					result.value=parseFloat(Number(input.value)/12).toFixed(6);
+				}
+				else if(b==="Inch")
+				{
+					result.value=input.value;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=parseFloat(Number(input.value)/72910).toFixed(6);
+				}
+			}
+			if(a==="Nautical mile")
+			{
+				if(b==="Kilometer")
+				{
+					result.value=Number(input.value)*1.852;
+				}
+				else if(b==="Meter")
+				{
+					result.value=Number(input.value)*1852;
+				}
+				else if(b==="Centimeter")
+				{
+					result.value=Number(input.value)*185200;
+				}
+				else if(b==="Millimeter")
+				{
+					result.value=Number(input.value)*1852000;
+				}
+				else if(b==="Micrometer")
+				{
+					result.value=Number(input.value)*1852000000;
+				}
+				else if(b==="Nanometer")
+				{
+					result.value=Number(input.value)*1852000000000;
+				}
+				else if(b==="Mile")
+				{
+					result.value=parseFloat(Number(input.value)*1.151).toFixed(6);
+				}
+				else if(b==="Yard")
+				{
+					result.value=Number(input.value)*2025;
+				}
+				else if(b==="Foot")
+				{
+					result.value=Number(input.value)*6076;
+				}
+				else if(b==="Inch")
+				{
+					result.value=Number(input.value)*72910;
+				}
+				else if(b==="Nautical mile")
+				{
+					result.value=input.value;
+				}
+			}
+		}
+		
+	</script>
+</head>
+<body>
+    <div class="converter-body">
+        <h1 class="conveter-title">Unit Converter</h1> 
+
+        <input type="text" placeholder="Input" id="input">
+        <span>=</span>
+        <input type="text" placeholder="Result" id="result" disabled>
+        
+        <select id="inputType">
+            <option value="Meter">Meter</option>
+            <option value="Kilometer">Kilometer</option>
+            <option value="Centimeter">Centimeter</option>
+			<option value="Millimeter">Millimeter</option>
+			<option value="Micrometer">Micrometer</option>
+			<option value="Nanometer">Nanometer</option>
+			<option value="Mile">Mile</option>
+			<option value="Yard">Yard</option>  
+			<option value="Foot">Foot</option>
+		    <option value="Inch">Inch</option>
+			<option value="NauticalMiles">Nautical mile</option>
+        </select>
+
+        <select id="resultType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="Centimeter">Centimeter</option>
+			<option value="Millimeter">Millimeter</option>
+			<option value="Micrometer">Micrometer</option>
+			<option value="Nanometer">Nanometer</option>
+			<option value="Mile">Mile</option>
+			<option value="Yard">Yard</option>  
+			<option value="Foot">Foot</option>
+		    <option value="Inch">Inch</option>
+			<option value="NauticalMiles">Nautical mile</option>
+        </select>
+		<br><br>
+		<input class="but" type="button" onclick="myResult()" value="Calculate">
+    </div>
+    
+</body>
+</html>
